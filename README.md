@@ -10,7 +10,6 @@
 
 🚀 **B.Tech Computer Science | AIML Enthusiast | Web Developer**
 
-![Profile Views](https://github.com/Ishu6129)  
 
 ---
 
@@ -26,7 +25,6 @@
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Blockchain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=ethereum&logoColor=white)
 
 ---
 
