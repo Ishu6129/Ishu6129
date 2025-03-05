@@ -37,9 +37,8 @@
 ---
 
 ### 🎯 Let's Connect!
-[![LinkedIn](https://www.linkedin.com/in/ishu-agrawal-6b9286289/)  
-[![GitHub](https://github.com/Ishu6129)  
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ishu-agrawal-6b9286289/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ishu6129) 
 ---
 
 🚀 *Always building, learning, and innovating! Let's create something amazing!*
