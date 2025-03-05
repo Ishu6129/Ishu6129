@@ -29,8 +29,8 @@
 ---
 
 ### 📌 Featured Projects:
-💬 [Real-time Chat App (Socket.io)](https://github.com/your-github-username/chat-app)  
-🖱️ [Laptop Keyboard & Mouse Remote](https://github.com/your-github-username/remote-control)  
+💬 [Real-time Chat App (Socket.io)](https://github.com/Ishu6129/GROUP_CHAT_App.)  
+🖱️ [Laptop Keyboard & Mouse Remote](https://github.com/Ishu6129/YT-MV_CONTROLLER)  
 
 ---
 
