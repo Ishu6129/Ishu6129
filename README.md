@@ -53,8 +53,6 @@ Passionate **Computer Science Engineer** with expertise in **AI/ML, Backend Deve
 🔹 **Let's innovate together.** 🚀  
 
 ---
-
-> *"Turning ideas into functional code with precision and passion."*
-
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Ishu6129&show_icons=true&theme=dark)](https://github.com/Ishu6129)
+> *"Turning ideas into functional code with precision and passion."*
 
