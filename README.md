@@ -55,15 +55,6 @@ Passionate **Computer Science Engineer** with expertise in **AI/ML, Backend Deve
 ---
 
 > *"Turning ideas into functional code with precision and passion."*
->
-> # Hi, I'm Ishu Agrawal! 👋
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Ishu6129&show_icons=true&theme=dark)](https://github.com/Ishu6129)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ishu6129&layout=compact)](https://github.com/Ishu6129)
 
-### 🔥 Recent Projects
-{{range recentRepos 3}}
-- [{{.Name}}]({{.URL}}) - {{.Description}}
-{{- end}}
-
-[![Connect](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ishu-agrawal-6b9286289/)
