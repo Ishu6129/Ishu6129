@@ -1,13 +1,6 @@
 # 👋 Hi, I'm ISHU AGRAWAL  
 **B.Tech in Computer Science | AI/ML & Full-Stack Developer**  
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ishu6129&label=Profile%20views&color=0e75b6&style=flat" alt="Ishu6129" /> 
-  <a href="https://github.com/Ishu6129?tab=followers">
-    <img src="https://img.shields.io/github/followers/Ishu6129?label=Followers&style=social" alt="GitHub Followers">
-  </a>
-</p>
-
 ## 🌟 About Me  
 Passionate Computer Science Engineer with expertise in AI/ML, Backend Development, and Blockchain.  
 
