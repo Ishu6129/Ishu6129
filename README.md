@@ -61,7 +61,6 @@ Passionate Computer Science professional with expertise spanning AI/ML, Full-Sta
 | **[Real-Time Chat Platform](https://github.com/Ishu6129/GROUP_CHAT_App.)** | Enterprise-grade messaging solution with E2E encryption | React, Node.js, Socket.io, MongoDB |
 | **[AI-Powered Salary Predictor](https://github.com/Ishu6129/EmployeeSalaryPrediction_AICTE_EdunetFoundation_IBM_IshuAgrawal)** | Machine learning model for compensation analysis | Python, Scikit-learn, Pandas |
 | **[Cross-Device Input System](https://github.com/Ishu6129/PYTHON)** | Advanced remote control application | Python, PyAutoGUI, Socket Programming |
-| **[React Native E-Commerce](https://github.com/Ishu6129/ReactNative)** | Mobile shopping platform with payment integration | React Native, Redux, Firebase |
 
 </div>
 
