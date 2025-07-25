@@ -3,16 +3,13 @@
 # ✨ ISHU AGRAWAL ✨
 ### **B.Tech in Computer Science | AI/ML & Full-Stack Developer**
 
-[![Profile Views](https://komarev.com/ghpvc/?username=Ishu6129&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/Ishu6129)
-[![LinkedIn](https://img.shields.io/badge/-Connect-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ishuag/)
-
 </div>
 
 ---
 
 ## 🎯 About Me
 <p align="justify">
-Passionate Computer Science professional with expertise spanning AI/ML, Full-Stack Development, and Blockchain technologies. Dedicated to crafting elegant solutions that solve complex problems while maintaining clean, efficient code architecture. Continuously expanding my knowledge horizon to stay at the forefront of technological innovation.
+Passionate Computer Science professional with expertise spanning AI/ML, Full-Stack Development. Dedicated to crafting elegant solutions that solve complex problems while maintaining clean, efficient code architecture. Continuously expanding my knowledge horizon to stay at the forefront of technological innovation.
 </p>
 
 🔹 **Core Competencies:** MERN Stack, Machine Learning, Cross-Platform Development  
@@ -69,6 +66,3 @@ Passionate Computer Science professional with expertise spanning AI/ML, Full-Sta
 </div>
 
 ---
-
-## 📈 GitHub Analytics
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Ishu6129&show_icons=true&theme=radical&bg_color=30,0d1117,161b22&title_color=fff&text_color=fff&icon_color=79ff97&hide_border=true" width="48%"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ishu6129&theme=radical&background=0d1117&hide_border=true&fire=DD2727" width="48%"/> </p><p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ishu6129&theme=react-dark&bg_color=0d1117&hide_border=true&area=true&area_color=79ff97" width="90%"/> </p>
