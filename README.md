@@ -18,19 +18,18 @@ Passionate Computer Science professional with expertise spanning AI/ML, Full-Sta
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Technical Skills
 
-### **Frontend Mastery**
+### **Frontend**
 <div align="center">
   
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 </div>
 
-### **Backend Expertise**
+### **Backend**
 <div align="center">
 
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
