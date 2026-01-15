@@ -47,20 +47,6 @@ I am a results-driven Computer Science undergraduate specializing in **Artificia
 * **Tech:** Scikit-learn, Pandas, NumPy.
 
 ---
-
-### 📊 GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ishu6129&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ishu6129&layout=compact&theme=radical" alt="Top Languages" />
-</div>
-
----
-
-### 📄 Professional Resume
-For a detailed overview of my technical journey, certifications, and academic background:
-👉 **[Download / View My Formal Resume (PDF)](https://github.com/Ishu6129/Ishu6129/blob/main/resume.pdf)**
-
----
 <div align="center">
   <i>"Building purpose-driven software with precise optimization."</i>
 </div>
