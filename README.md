@@ -309,6 +309,7 @@ INPUT [PDF/DOCX/TXT] → [NLP Pipeline] → [Gemini API] → [PDF Export]
 ```
 
 <div align="center">
+
 [![LeetCode](https://img.shields.io/badge/LeetCode-ACTIVE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=1a1a1a)](https://leetcode.com/u/ishuagrawal124356//)
 [![GeeksForGeeks](https://img.shields.io/badge/GFG-ACTIVE-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=1a1a1a)](https://www.geeksforgeeks.org/profile/ishuagraw3rhg)
 
