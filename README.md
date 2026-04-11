@@ -309,10 +309,8 @@ INPUT [PDF/DOCX/TXT] → [NLP Pipeline] → [Gemini API] → [PDF Export]
 ```
 
 <div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-ACTIVE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=1a1a1a)](https://leetcode.com/u/ishu6129/)
-[![CodeChef](https://img.shields.io/badge/CodeChef-ACTIVE-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1a1a1a)](https://www.codechef.com/users/ishu6129)
-[![GeeksForGeeks](https://img.shields.io/badge/GFG-ACTIVE-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=1a1a1a)](https://www.geeksforgeeks.org/user/ishu6129/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-ACTIVE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=1a1a1a)](https://leetcode.com/u/ishuagrawal124356//)
+[![GeeksForGeeks](https://img.shields.io/badge/GFG-ACTIVE-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=1a1a1a)](https://www.geeksforgeeks.org/profile/ishuagraw3rhg)
 
 </div>
 
