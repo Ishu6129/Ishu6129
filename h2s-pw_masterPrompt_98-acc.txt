@@ -1,0 +1,470 @@
+You are an expert full-stack engineer building a production-grade, AI-powered web application for a competitive hackathon. The evaluation criteria are:
+
+- Code Quality (High Impact)
+- Security (High Impact)
+- Efficiency (High Impact)
+- Testing (Medium Impact)
+- Accessibility (Medium Impact)
+- Problem Statement Alignment (High Impact)
+
+---
+
+## 🎯 PROBLEM STATEMENT
+[PASTE YOUR PROBLEM STATEMENT HERE]
+
+---
+
+## 📐 TECH STACK (Non-Negotiable)
+- **Framework**: Next.js 14+ (App Router, TypeScript strict mode)
+- **Language**: TypeScript 5 with `strict: true`
+- **Styling**: Vanilla CSS (CSS custom properties / design tokens in `globals.css`)
+- **AI Backend**: Groq SDK (`groq-sdk`) with models:
+  - `llama-3.3-70b-versatile` — for complex reasoning and analysis
+  - `llama-3.1-8b-instant` — for fast streaming and simple queries
+- **Validation**: Zod (all API inputs and AI outputs validated)
+- **Testing**: Vitest with comprehensive unit tests
+- **Deployment**: Vercel-ready
+
+---
+
+## 🏗️ PROJECT STRUCTURE (Mandatory)
+
+```
+projectname/
+├── app/
+│   ├── page.tsx                    # Premium landing page
+│   ├── layout.tsx                  # Root layout with full SEO metadata
+│   ├── globals.css                 # Full design system with CSS tokens
+│   ├── [feature1]/page.tsx         # Primary feature page
+│   ├── [feature2]/page.tsx         # Secondary feature page
+│   └── api/
+│       ├── [primary]/route.ts      # Main AI endpoint
+│       ├── [secondary]/route.ts    # Secondary endpoint
+│       ├── [stream]/route.ts       # SSE streaming endpoint
+│       └── usage/route.ts          # Rate limit analytics
+├── components/
+│   ├── [domain]/                   # Feature-specific components
+│   ├── ui/
+│   │   ├── Badge.tsx
+│   │   └── UsageWidget.tsx         # Real-time API usage monitor
+├── hooks/
+│   ├── use[PrimaryFeature].ts
+│   └── useStreamingResponse.ts     # SSE hook
+├── lib/
+│   ├── groq.ts                     # Groq singleton + helpers
+│   ├── prompt-templates.ts         # Versioned system prompts
+│   ├── validators.ts               # Zod schemas for all endpoints
+│   ├── rate-limiter.ts             # In-memory IP rate limiter
+│   ├── [domain-classifier].ts      # Heuristic pre-filter
+│   └── [domain-chunker].ts         # Smart input chunking
+├── types/
+│   └── [feature].ts                # All TypeScript interfaces
+├── __tests__/
+│   └── lib/
+│       ├── groq.test.ts
+│       ├── rate-limiter.test.ts
+│       ├── prompt-templates.test.ts
+│       ├── validators.test.ts
+│       ├── [classifier].test.ts
+│       └── [chunker].test.ts
+├── .env.example                    # GROQ_API_KEY=your_key_here
+├── next.config.ts                  # Security headers
+├── vitest.config.ts
+├── package.json
+└── README.md                       # Full hackathon documentation
+```
+
+---
+
+## 🔧 MANDATORY IMPLEMENTATION REQUIREMENTS
+
+### 1. CODE QUALITY (Target: 100/100)
+- TypeScript strict mode everywhere — zero `any` types
+- Zero ESLint errors or warnings. Use `"plugin:@typescript-eslint/recommended"` and `"plugin:react-hooks/recommended"`
+- All React state initializers must be pure (no `Date.now()` or `Math.random()` in initial state — use `0` or `''` instead, compute in handlers)
+- No unused imports, variables, or parameters
+- Named exports only (no default export for components)
+- Modular, single-responsibility modules in `/lib`
+- Use `void` prefix for floating promises inside `useEffect`
+- All async functions must have proper error handling with typed catch blocks
+
+### 2. SECURITY (Target: 100/100)
+
+In `next.config.ts`, add ALL these security headers:
+```typescript
+const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-DNS-Prefetch-Control', value: 'off' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: blob:",
+              "connect-src 'self' https://api.groq.com",
+            ].join('; '),
+          },
+        ],
+      },
+    ];
+  },
+  compress: true,
+  experimental: { optimizePackageImports: ['groq-sdk'] },
+};
+```
+
+In `lib/rate-limiter.ts`, implement a **sliding window rate limiter** using `globalThis` singleton:
+```typescript
+// Store state on globalThis to persist across hot reloads
+type RateLimitStore = Map<string, { count: number; resetAt: number }>;
+const store: RateLimitStore =
+  (globalThis as Record<string, unknown>).__rateLimitStore as RateLimitStore ??
+  (() => {
+    const m = new Map<string, { count: number; resetAt: number }>();
+    (globalThis as Record<string, unknown>).__rateLimitStore = m;
+    return m;
+  })();
+
+// Implement checkRateLimit(ip: string, endpoint: string, limit: number, windowMs: number)
+// Returns: { allowed: boolean; remaining: number; resetAt: number; headers: Record<string, string> }
+```
+
+In all API route handlers:
+- Validate body with Zod, return 400 on parse failure
+- Extract IP from `x-forwarded-for` or `request.ip`
+- Check rate limit BEFORE processing
+- Never expose `GROQ_API_KEY` to client-side code
+- Use `try/catch` with typed errors and return proper HTTP status codes
+
+### 3. EFFICIENCY (Target: 100/100)
+- Implement heuristic pre-classification (`lib/[domain]-classifier.ts`) using regex patterns to categorize input complexity BEFORE sending to LLM
+- Route COMPLEX queries → `llama-3.3-70b-versatile`
+- Route SIMPLE/FAST queries → `llama-3.1-8b-instant`
+- Implement smart chunking (`lib/[domain]-chunker.ts`) for large inputs:
+  - Estimate tokens: `Math.ceil(text.length / 4)`
+  - Set max context: 6000 tokens (with 2000 buffer for response)
+  - Truncate/chunk and process most relevant sections
+- Use SSE (Server-Sent Events) for streaming responses — real-time output, no waiting
+- Client-side file processing where possible (PDFs, text extraction) to reduce backend payload
+- Implement `useMemo` and `useCallback` in React components where recomputation is expensive
+
+### 4. TESTING (Target: 100/100)
+
+Create `vitest.config.ts`:
+```typescript
+import { defineConfig } from 'vitest/config';
+import path from 'path';
+
+export default defineConfig({
+  test: { environment: 'node', globals: true },
+  resolve: { alias: { '@': path.resolve(__dirname, '.') } },
+});
+```
+
+Add to `package.json` scripts:
+```json
+"test": "vitest run",
+"test:watch": "vitest",
+"test:coverage": "vitest run --coverage"
+```
+
+Write comprehensive unit tests for ALL lib modules (aim for 40–60 tests total):
+
+**`__tests__/lib/rate-limiter.test.ts`** — test:
+- Rate limit is enforced after N requests
+- Counter resets after window expires
+- Different IPs are tracked independently
+- Different endpoints have independent limits
+- Headers (`X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`) are returned
+
+**`__tests__/lib/groq.test.ts`** — test:
+- Client initializes with valid API key
+- Throws clear error when `GROQ_API_KEY` is missing
+- Chat completion function returns expected structure
+- Error propagation works correctly
+
+**`__tests__/lib/prompt-templates.test.ts`** — test:
+- System prompt is a non-empty string
+- Templates include dynamic context when provided
+- Template output contains domain-specific keywords
+
+**`__tests__/lib/validators.test.ts`** — test:
+- Valid payloads pass schema validation
+- Missing required fields return ZodError
+- Oversized inputs are rejected
+- Type coercion works as expected
+
+**`__tests__/lib/[classifier].test.ts`** — test:
+- High-complexity inputs are classified as complex
+- Simple inputs route to fast model
+- Risk/category patterns are detected accurately
+- Edge cases (empty string, special chars)
+
+**`__tests__/lib/[chunker].test.ts`** — test:
+- Short inputs are returned as-is
+- Long inputs are chunked at logical boundaries
+- Token estimation is accurate
+- Chunk overlap/context is preserved
+
+### 5. ACCESSIBILITY (Target: 100/100)
+Every page must include:
+- `<a href="#main-content" className="skip-link">Skip to main content</a>` as first child of `<body>`
+- `<main id="main-content">` wrapping page content
+- Proper heading hierarchy: one `<h1>`, then `<h2>`, `<h3>`
+- All `<button>` elements have `aria-label` or descriptive visible text
+- `<img>` elements have meaningful `alt` text (not just "image")
+- Loading states use `<div role="status" aria-live="polite">`
+- Error states use `<div role="alert" aria-live="assertive">`
+- Streaming chat output uses `<div aria-live="polite" aria-atomic="false">`
+- Tabs use `role="tablist"`, `role="tab"`, `role="tabpanel"` with `aria-selected`, `aria-controls`, `aria-labelledby`
+- File inputs have associated `<label htmlFor>` elements
+- Forms use `<fieldset>` and `<legend>` for grouping
+- Focus styles visible (never `outline: none` without replacement)
+- All interactive states reachable by Tab + Enter/Space keyboard nav
+- In `globals.css`: `@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; } }`
+
+---
+
+## 📋 README.md (Mandatory Sections)
+
+The README MUST contain these exact H2 sections:
+
+### ## 🎯 Chosen Vertical
+Describe specifically which challenge vertical you chose and why.
+
+### ## 🧠 Approach and Logic
+Include:
+- An ASCII architecture diagram showing data flow
+- Numbered list of technical pillars (heuristic pre-filter, two-tier routing, chunking, validation, etc.)
+
+### ## ⚙️ How the Solution Works
+Step-by-step numbered explanation of every user flow end-to-end.
+
+### ## 📌 Assumptions Made
+List 4–6 concrete, realistic assumptions (format, scope, environment, legal, etc.)
+
+### ## 🏆 Evaluation Focus Areas Alignment
+Subsections for each parameter (Code Quality, Security, Efficiency, Testing, Accessibility) explicitly listing HOW each criterion is met with specific file names and line references.
+
+### ## 🏗️ Architecture
+Full file tree with inline comments describing every file's purpose.
+
+### ## 🚀 Getting Started
+Clone URL, install steps, env setup, dev server start.
+
+### ## 🤖 AI Models
+Table of models used, their IDs, and their specific use cases in the project.
+
+### ## 🧪 Testing
+Commands + table listing every test file and what it covers.
+
+---
+
+## 🎨 DESIGN SYSTEM (globals.css)
+
+The design must be visually stunning and modern:
+```css
+/* Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Core Palette — Dark Mode First */
+  --bg-base:        #0b0f19;
+  --bg-surface:     #111827;
+  --bg-elevated:    #1a2235;
+  --border-subtle:  rgba(99, 102, 241, 0.15);
+  --border-default: rgba(99, 102, 241, 0.3);
+
+  /* Accent */
+  --accent:         #6366f1;   /* indigo */
+  --accent-hover:   #818cf8;
+  --accent-dim:     rgba(99, 102, 241, 0.1);
+
+  /* Status Colors */
+  --risk-high:      #ef4444;
+  --risk-high-dim:  rgba(239, 68, 68, 0.1);
+  --risk-med:       #f59e0b;
+  --risk-med-dim:   rgba(245, 158, 11, 0.1);
+  --risk-low:       #10b981;
+  --risk-low-dim:   rgba(16, 185, 129, 0.1);
+
+  /* Typography */
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+
+  /* Spacing */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+/* Glassmorphism card */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  border-color: var(--border-default);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border-default);
+}
+
+/* Gradient button */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+}
+.btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Fade-up animation */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-fade-up { animation: fade-up 0.5s ease forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+```
+
+---
+
+## 📦 package.json (Required Dependencies)
+
+```json
+{
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "groq-sdk": "^0.9.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  }
+}
+```
+
+---
+
+## ✅ PRE-COMMIT VERIFICATION CHECKLIST
+
+Before generating the final output, verify ALL of the following:
+
+**Code Quality:**
+- [ ] `npm run lint` → 0 errors, 0 warnings
+- [ ] `npm run type-check` → 0 errors
+- [ ] No `any` types anywhere
+- [ ] No unused imports/variables
+
+**Security:**
+- [ ] All 7 HTTP security headers present in `next.config.ts`
+- [ ] Rate limiter implemented with `globalThis` singleton
+- [ ] All API routes validate input with Zod before processing
+- [ ] `GROQ_API_KEY` only used in server-side code (`app/api/`)
+
+**Efficiency:**
+- [ ] Heuristic pre-classifier implemented and used in routing
+- [ ] Two-tier model selection (70B for complex, 8B for fast)
+- [ ] Input chunking for large payloads
+- [ ] SSE streaming for real-time responses
+
+**Testing:**
+- [ ] `npm test` → all tests pass (aim for 40–60 tests)
+- [ ] All 6 lib modules have test files
+- [ ] Tests cover: happy path, edge cases, error cases
+
+**Accessibility:**
+- [ ] Skip link present on all pages
+- [ ] `<main id="main-content">` on all pages
+- [ ] All buttons have labels
+- [ ] ARIA live regions on loading/error/streaming states
+- [ ] Tab/keyboard navigation functional
+
+**README:**
+- [ ] Section: "Chosen Vertical"
+- [ ] Section: "Approach and Logic" with ASCII diagram
+- [ ] Section: "How the Solution Works"
+- [ ] Section: "Assumptions Made"
+- [ ] Section: "Evaluation Focus Areas Alignment"
+
+---
+
+## 🚀 OUTPUT INSTRUCTIONS
+
+Generate ALL files completely with no placeholders. Every file must be production-ready. Do not say "implement this yourself" or "fill in logic here." Generate real, working TypeScript code for every file.
+
+Start with:
+1. `package.json`
+2. `next.config.ts`
+3. `tsconfig.json`
+4. `vitest.config.ts`
+5. `.env.example`
+6. `app/globals.css` (full design system)
+7. `lib/groq.ts`
+8. `lib/rate-limiter.ts`
+9. `lib/validators.ts`
+10. `lib/prompt-templates.ts`
+11. `lib/[domain-classifier].ts`
+12. `lib/[domain-chunker].ts`
+13. All `__tests__/lib/*.test.ts` files
+14. All `app/api/*/route.ts` files
+15. All `types/*.ts` files
+16. All `components/**/*.tsx` files
+17. All `hooks/*.ts` files
+18. All `app/*/page.tsx` files
+19. `app/layout.tsx`
+20. `README.md`
