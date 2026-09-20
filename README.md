@@ -1,332 +1,210 @@
-<!-- ████████████████████████████████████████████████████████████ -->
-<!--          ISHU AGRAWAL — GITHUB README  //  v5.0.0          -->
-<!-- ████████████████████████████████████████████████████████████ -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:001a00,60:003300,100:001a00&height=220&section=header&text=ISHU%20AGRAWAL&fontSize=80&fontColor=39FF14&animation=fadeIn&fontAlignY=40&desc=Backend%20Engineer%20%7C%20System%20Architect%20%7C%20DSA%20Grinder&descSize=18&descAlignY=62&descColor=00ff88" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=ISHU%20AGRAWAL&fontSize=55&fontAlignY=38&desc=Backend%20%7C%20DSA%20%7C%20AI%20Applications&descAlignY=62&animation=fadeIn&fontColor=ffffff&color=0:0F172A,50:1D4ED8,100:06B6D4" width="100%"/>
+
+<br/>
+
+<a href="https://git.io/typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=720&lines=Building+reliable+backend+systems;500%2B+DSA+problems+solved;Learning+agentic+AI+%26+LLM+apps;Learn+it.+Build+it.+Improve+it." alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
+<a href="https://linkedin.com/in/ishuag/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="https://github.com/Ishu6129"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+&nbsp;
+<a href="mailto:ishuagrawal124356@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+&nbsp;
+<a href="https://leetcode.com/u/Ishu6129/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
 
 </div>
 
-<br>
+<br/>
+
+## 🧭 About Me
+
+<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="280" alt="coding"/>
+
+I'm a final-year **B.Tech student in CSE (AI & ML)** at GLA University, Mathura, graduating in 2027.
+
+I mostly build **backends** — the parts where details matter: who gets let in, what happens when a request is retried, and whether two database writes succeed or fail together. **AuthAPI** and **LedgerFlow** came out of wanting to understand those problems by building them.
+
+I solve **DSA problems daily** in Java and Python (500+ across LeetCode, CodeChef, GFG) and I'm getting into **LLM applications** — I've built an MCQ generator on top of spaCy + Groq API and I'm learning LangChain / LangGraph by building small agentic systems.
+
+> 💡 **How I learn:** pick up the concept → build something with it → read back through the implementation → improve it.
+
+<br clear="right"/>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&duration=2500&pause=600&color=39FF14&center=true&vCenter=true&width=820&lines=%24+whoami;Backend+Engineer+%7C+Node.js+%7C+Express+%7C+MongoDB+%7C+Redis;%24+cat+mission.txt;Build+scalable%2C+fault-tolerant+backend+systems.;%24+ls+-la+%2Fskills;JWT+Auth+%7C+Redis+%7C+BullMQ+%7C+ACID+Transactions+%7C+REST+APIs;%24+grep+-r+%22discipline%22+%2Fcore;500%2B+DSA+problems+solved.+Still+counting.;%24+status+--check;ONLINE+%E2%96%88+BUILDING+%E2%96%88+DEPLOYING+%E2%96%88+SHIPPING" />
-
-</div>
-
-<br>
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/%E2%96%BA_CONNECT-LinkedIn-39FF14?style=for-the-badge&labelColor=0d1117&logo=linkedin&logoColor=39FF14)](https://linkedin.com/in/ishuag/)&nbsp;
-[![GitHub](https://img.shields.io/badge/%E2%96%BA_FOLLOW-GitHub-39FF14?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=39FF14)](https://github.com/Ishu6129)&nbsp;
-[![Email](https://img.shields.io/badge/%E2%96%BA_EMAIL-Contact-39FF14?style=for-the-badge&labelColor=0d1117&logo=gmail&logoColor=39FF14)](mailto:ishuagrawal124356@gmail.com)
-
-<br>
-
-![CGPA](https://img.shields.io/badge/CGPA-8.47%2F10-39FF14?style=for-the-badge&labelColor=0a0a0a)&nbsp;
-![DSA](https://img.shields.io/badge/DSA-500%2B_Solved-39FF14?style=for-the-badge&labelColor=0a0a0a&logo=leetcode&logoColor=39FF14)&nbsp;
-![Status](https://img.shields.io/badge/STATUS-OPEN_TO_WORK-39FF14?style=for-the-badge&labelColor=0a0a0a)
-
-<br>
-
-[![](https://visitcount.itsvg.in/api?id=Ishu6129&icon=0&color=3)](https://visitcount.itsvg.in)
-
-</div>
-
----
-
-## `> sys.profile --full`
-
-```yaml
-# ╔══════════════════════════════════════════════════════════════╗
-# ║               CLASSIFIED OPERATOR PROFILE                   ║
-# ╚══════════════════════════════════════════════════════════════╝
-
-operator:
-  name         : "Ishu Agrawal"
-  role         : "Backend Engineer // System Architect"
-  clearance    : "PRODUCTION-GRADE"
-
-academic:
-  institution  : "GLA University, Mathura"
-  degree       : "B.Tech — Computer Science (AI & ML)"
-  graduation   : "May 2027"
-  cgpa         : "8.47 / 10"
-  class_x      : "95.0%"
-  class_xii    : "86.6%"
-
-summary:
-  focus        : "REST APIs | Auth Systems | Async Processing | Transaction Integrity"
-  dsa_progress : "500+ problems — LeetCode · CodeChef · GeeksforGeeks"
-  approach     : "Build practical systems first. Understand deeply. Scale deliberately."
-
-certifications:
-  - name       : "API Development & Automation"
-    issuer     : "Postman Student Expert Program"
-    year       : 2024
-
-current_phase  : "Backend → System Design → AI/ML Integration"
-availability   : "OPEN — Internship / Full-time"
-location       : "Mathura, Uttar Pradesh, India"
-```
-
----
-
-## `> stack.load --modules=all`
-
-<div align="center">
-
-### `[ CORE LANGUAGES ]`
-<img src="https://skillicons.dev/icons?i=js,ts,java,python&theme=dark&perline=8" height="55" />
-
-### `[ BACKEND ENGINE ]`
-<img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark&perline=8" height="55" />
-
-### `[ DATA LAYER ]`
-<img src="https://skillicons.dev/icons?i=mongodb,redis,mysql&theme=dark&perline=8" height="55" />
-
-### `[ TOOLS & DEPLOYMENT ]`
-<img src="https://skillicons.dev/icons?i=git,github,postman,vercel&theme=dark&perline=8" height="55" />
-
-### `[ FRONTEND SUPPORT ]`
-<img src="https://skillicons.dev/icons?i=react,tailwind,html,css&theme=dark&perline=8" height="55" />
-
-</div>
-
-<br>
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                    [ SKILL PROFICIENCY MATRIX ]                  ║
-╠══════════════════════════════════════════════════════════════════╣
-║  Node.js / Express    ████████████████████████░░  ADVANCED       ║
-║  MongoDB              ███████████████████████░░░  ADVANCED       ║
-║  REST API Design      ████████████████████████░░  ADVANCED       ║
-║  JWT / Auth Systems   ████████████████████████░░  ADVANCED       ║
-║  Redis / BullMQ       ████████████████████░░░░░░  PROFICIENT     ║
-║  JavaScript           ████████████████████████░░  ADVANCED       ║
-║  TypeScript           ████████████████░░░░░░░░░░  GROWING  🔥    ║
-║  Java (DSA)           ██████████████████████░░░░  PROFICIENT     ║
-║  Python / Flask       █████████████████░░░░░░░░░  INTERMEDIATE   ║
-║  System Design        ████████████████░░░░░░░░░░  GROWING  🔥    ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
----
-
-## `> projects.deploy --list=active`
-
-<details open>
-<summary>
-<img src="https://img.shields.io/badge/%F0%9F%94%90_AUTHAPI-Authentication_%26_Session_Management-39FF14?style=for-the-badge&labelColor=0a0a0a" />
-</summary>
-
-<br>
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│  PROJECT   : AuthAPI                                             │
-│  STACK     : Node.js · Express.js · MongoDB · Redis · BullMQ    │
-│  DEPLOYED  : Render                              [LIVE ●]        │
-│  TIMELINE  : March 2026                                          │
-└──────────────────────────────────────────────────────────────────┘
-```
-
-**`[ SYSTEM ARCHITECTURE ]`**
-
-```
-CLIENT REQUEST
-      │
-      ▼
- ┌─────────────┐     ┌──────────────────────────────────────────┐
- │   Express   │────▶│         Middleware Pipeline              │
- │   Router    │     │  Joi Validation → Rate Limit → Auth JWT  │
- └─────────────┘     └───────────────────┬──────────────────────┘
-                                         │
-              ┌──────────────────────────▼─────────────────────┐
-              │              Controller Layer                   │
-              │    /auth/register  /auth/login  /auth/logout   │
-              └──────┬─────────────────────────────┬───────────┘
-                     │                             │
-         ┌───────────▼──────────┐   ┌─────────────▼──────────┐
-         │  MongoDB (Primary)   │   │   Redis (Cache+Rate)   │
-         │  Users · Sessions    │   │   Token Blacklist       │
-         └──────────────────────┘   └─────────────┬──────────┘
-                                                   │
-                                    ┌──────────────▼─────────┐
-                                    │  BullMQ Email Queue    │
-                                    │  OTP · Reset · Verify  │
-                                    └────────────────────────┘
-```
-
-**`[ CAPABILITY MATRIX ]`**
-
-| Module | Implementation | Status |
-|--------|---------------|--------|
-| 🔑 **JWT Auth Core** | Access + refresh token rotation, stateless multi-device sessions | `✅ LIVE` |
-| 🛡️ **Rate Limiting** | Redis-backed tiered limits — global / login / OTP endpoints | `✅ LIVE` |
-| 📧 **Async Email Queue** | BullMQ workers — decoupled from request lifecycle | `✅ LIVE` |
-| 📍 **Session Tracking** | IP + browser fingerprinting, cross-device logout support | `✅ LIVE` |
-| ✅ **Validation Layer** | Centralized Joi schema validation + error-handling middleware | `✅ LIVE` |
-| 🔒 **OTP System** | Email verify + password reset with expiry + attempt limits | `✅ LIVE` |
-| 🧠 **Session Engine** | Multi-device session store, revocation on password reset | `✅ LIVE` |
-
-[![AuthAPI Repo](https://img.shields.io/badge/VIEW_REPO-AuthAPI-39FF14?style=for-the-badge&labelColor=0a0a0a&logo=github)](https://github.com/Ishu6129/AuthAPI)
-
-</details>
-
-<br>
-
-<details>
-<summary>
-<img src="https://img.shields.io/badge/%F0%9F%92%B0_LEDGERFLOW-Financial_Transaction_API-00ff88?style=for-the-badge&labelColor=0a0a0a" />
-</summary>
-
-<br>
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│  PROJECT   : LedgerFlow                                      │
-│  STACK     : Node.js · Express.js · MongoDB                  │
-│  TIMELINE  : February 2026                                   │
-│  FOCUS     : ACID Integrity · Immutable Audit Trail          │
-└──────────────────────────────────────────────────────────────┘
-```
-
-| Module | Implementation | Status |
-|--------|---------------|--------|
-| 🏦 **Account Engine** | Account management, balance tracking, multi-step fund transfers | `✅ BUILT` |
-| ⚛️ **ACID Transactions** | MongoDB session-based transactions for operation consistency | `✅ BUILT` |
-| 📒 **Immutable Ledger** | DEBIT/CREDIT append-only design — tamper-resistant audit trail | `✅ BUILT` |
-| 🔄 **Idempotency** | UUID v4 idempotency keys to handle duplicate transaction retries | `✅ BUILT` |
-| ⚡ **Query Engine** | Aggregation pipelines for financial reporting & summaries | `✅ BUILT` |
-| 🔐 **Auth Layer** | JWT + middleware-based role authorization | `✅ BUILT` |
-
-```
-TRANSACTION FLOW:
-  [SENDER] ──debit──▶ [LEDGER ENGINE] ──credit──▶ [RECEIVER]
-                              │
-                    MongoDB ACID Transaction
-                     (atomic · consistent · isolated · durable)
-                              │
-                    IMMUTABLE AUDIT LOG ◀────────── stored forever
-```
-
-[![LedgerFlow Repo](https://img.shields.io/badge/VIEW_REPO-LedgerFlow-00ff88?style=for-the-badge&labelColor=0a0a0a&logo=github)](https://github.com/Ishu6129/LedgerFlow)
-
-</details>
-
-<br>
-
-<details>
-<summary>
-<img src="https://img.shields.io/badge/%F0%9F%A4%96_AUTOQGEN-AI_Powered_MCQ_Generator-a855f7?style=for-the-badge&labelColor=0a0a0a" />
-</summary>
-
-<br>
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│  PROJECT   : AutoQGen                                        │
-│  STACK     : Python · Flask · Google Gemini API              │
-│  TIMELINE  : December 2025                                   │
-│  TYPE      : AI-Integrated Application                       │
-└──────────────────────────────────────────────────────────────┘
-```
-
-| Module | Implementation | Status |
-|--------|---------------|--------|
-| 📄 **Multi-format Parser** | Accepts PDF, DOCX, and plain text as input sources | `✅ BUILT` |
-| 🧠 **AI Question Engine** | Google Gemini API for contextual MCQ generation | `✅ BUILT` |
-| 📤 **Export Pipeline** | Auto-generates downloadable, formatted PDF question sets | `✅ BUILT` |
-
-```
-INPUT [PDF/DOCX/TXT] → [NLP Pipeline] → [Gemini API] → [PDF Export]
-```
-
-</details>
-
----
-
-## `> dsa.stats --platforms=all`
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║              [ ALGORITHM COMBAT RECORD — 500+ KILLS ]           ║
-╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║  Arrays & Strings    ████████████████████████  EXPERT           ║
-║  Recursion           ████████████████████░░░░  ADVANCED         ║
-║  Trees               ████████████████████░░░░  ADVANCED         ║
-║  Graphs              ████████████████░░░░░░░░  PROFICIENT       ║
-║  Sorting / Search    ████████████████████████  EXPERT           ║
-║  Dynamic Prog.       ████████████░░░░░░░░░░░░  GROWING  ↑       ║
-║  Linked Lists        ████████████████████████  EXPERT           ║
-║  Stacks & Queues     ████████████████████████  EXPERT           ║
-║                                                                  ║
-║  PREFERRED LANGUAGE  : Java + JavaScript                         ║
-║  FOCUS               : Time/Space complexity optimization        ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-<div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-ACTIVE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=1a1a1a)](https://leetcode.com/u/ishuagrawal124356/)&nbsp;
-[![GeeksForGeeks](https://img.shields.io/badge/GFG-ACTIVE-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=1a1a1a)](https://www.geeksforgeeks.org/profile/ishuagraw3rhg)
+| 🎓 Education | 🧩 Problem Solving | 🎯 Focus |
+| :---: | :---: | :---: |
+| B.Tech CSE (AI & ML), GLA University<br/>graduating 2027 | 500+ problems on LeetCode,<br/>CodeChef & GFG | Backend APIs, databases,<br/>LLM applications |
 
 </div>
 
 ---
 
-## `> activity.graph --render`
+## 🛠️ Tech Stack
+
+**Languages**
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Backend**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![BullMQ](https://img.shields.io/badge/BullMQ-E34F26?style=for-the-badge)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![REST API](https://img.shields.io/badge/REST-02569B?style=for-the-badge)
+
+**Databases & Caching**
+
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+
+**AI / NLP**
+
+![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-111827?style=for-the-badge)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge)
+
+**Frontend & Tools**
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🔐 AuthAPI
+
+*Auth backend — sign-up to session management, plus the email flows around it.*
+
+- JWT auth with refresh tokens & session management
+- Email verification & password reset flows
+- Emails sent via **BullMQ** background queue — requests never block on the mail server
+- Request validation + auth middleware
+- Redis for supporting functionality
+
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/BullMQ-E34F26?style=flat-square"/>
+
+👉 [View on GitHub](https://github.com/Ishu6129/AuthAPI)
+
+</td>
+<td width="50%" valign="top">
+
+#### 💸 LedgerFlow
+
+*REST API for moving money between users — built to understand what must stay true when one transfer touches several records.*
+
+- User & account management, balances, transaction history
+- Transfers inside **MongoDB sessions & transactions** — debit & credit succeed or fail together
+- **UUID idempotency keys** — a retried request never applies the same transfer twice
+- Full ledger records for every transaction
+- JWT authentication
+
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white"/>
+
+👉 [View on GitHub](https://github.com/Ishu6129/LedgerFlow)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+#### 📝 AutoQGen
+
+*Flask app that generates MCQs from study material — upload a PDF, DOCX, TXT or Google Drive link, pick local NLP (spaCy) or LLM (Groq API), and download the result as a PDF.*
+
+```mermaid
+flowchart LR
+    A["📄 PDF / DOCX / TXT / Drive link"] --> B["Flask app"]
+    B --> C["Text extraction"]
+    C --> D["Cleaning + TF-IDF summary"]
+    D --> E{"Mode"}
+    E -->|NLP| F["spaCy"]
+    E -->|AI| G["Groq API"]
+    F --> H["Parse & validate MCQs"]
+    G --> H
+    H --> I["✅ Results page + PDF"]
+```
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/spaCy-09A3D5?style=flat-square"/> <img src="https://img.shields.io/badge/Groq-111827?style=flat-square"/> <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 GitHub Analytics
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Ishu6129&bg_color=0d1117&color=39FF14&line=39FF14&point=00ff88&area=true&area_color=003300&hide_border=false&border_color=39FF14&custom_title=Commit+Activity+%7C+ishu%40backend)
+<a href="https://github.com/Ishu6129">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Ishu6129&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&text_color=C9D1D9&ring_color=38BDF8" alt="GitHub stats"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Ishu6129">
+<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Ishu6129&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=06B6D4&currStreakLabel=38BDF8" alt="GitHub streak"/>
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Ishu6129">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ishu6129&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9" alt="Top languages"/>
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Ishu6129">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ishu6129&bg_color=0d1117&color=38bdf8&line=1d4ed8&point=06b6d4&hide_border=true&area=true" alt="Activity graph"/>
+</a>
 
 </div>
 
 ---
 
-## `> network.connect --protocol=open`
+## 🌱 Currently
 
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║           OPEN CHANNEL — CONNECTION ACCEPTED                 ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║   📡  Actively looking for Backend / Full-Stack roles        ║
-║   📡  Open to internships, collaborations, open source       ║
-║   📡  Response time: < 24 hours                              ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-<br>
-
-[![Email](https://img.shields.io/badge/📧_EMAIL-ishuagrawal124356%40gmail.com-39FF14?style=for-the-badge&labelColor=0d1117)](mailto:ishuagrawal124356@gmail.com)&nbsp;
-[![LinkedIn](https://img.shields.io/badge/💼_LINKEDIN-ishuag-39FF14?style=for-the-badge&labelColor=0d1117&logo=linkedin&logoColor=39FF14)](https://linkedin.com/in/ishuag/)&nbsp;
-[![GitHub](https://img.shields.io/badge/🐙_GITHUB-Ishu6129-39FF14?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=39FF14)](https://github.com/Ishu6129)
-
-</div>
+- Building backend projects that go **past CRUD**: queues, transactions, retries
+- Working through **DSA** problems in Java & Python
+- Learning **LangChain & LangGraph** by building small agentic systems
 
 ---
 
+## 🤝 Let's Connect
+
+If you want to talk backend, DSA, or something you're building:
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=15&duration=3500&pause=1200&color=39FF14&center=true&vCenter=true&width=780&lines=%22First+solve+the+problem.+Then+write+the+code.%22;%22Systems+that+don%27t+break+are+built+by+people+who+think+in+failure+modes.%22;%22Ship+fast.+Observe.+Iterate.+Scale.%22;%22Code+is+craft.+Architecture+is+art.%22" />
+<a href="https://linkedin.com/in/ishuag/"><img src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="mailto:ishuagrawal124356@gmail.com"><img src="https://img.shields.io/badge/Send_me_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
-<br>
+<br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:001a00,50:003300,100:000000&height=130&section=footer&text=ISHU%20AGRAWAL%20%2F%2F%20EOF&fontSize=26&fontColor=39FF14&animation=fadeIn&fontAlignY=65" />
+<img src="https://komarev.com/ghpvc/?username=Ishu6129&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
 
 </div>
 
-<!-- ████████████████████████████████████████████████████████████ -->
-<!--             END OF FILE  //  ishu-readme-v5.0.0             -->
-<!-- ████████████████████████████████████████████████████████████ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:0F172A,50:1D4ED8,100:06B6D4" width="100%"/>
