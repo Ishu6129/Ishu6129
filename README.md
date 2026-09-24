@@ -16,7 +16,7 @@
 &nbsp;
 <a href="mailto:ishuagrawal124356@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 &nbsp;
-<a href="https://leetcode.com/u/Ishu6129/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
+<a href="https://leetcode.com/u/ishuagrawal124356/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
 
 </div>
 
